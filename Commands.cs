@@ -62,7 +62,8 @@ public static class Commands
 
     public static void Magic8Ball()
     {
-        string[] responses = { 
+        string[] responses =
+        [
             "yes!", 
             "no.", 
             "maybe?", 
@@ -74,7 +75,8 @@ public static class Commands
             "sudo rm -rf /*", 
             "deleting system32...", 
             "U+200C", 
-            "yesyesyesyesyesyesyesyesNO"};
+            "yesyesyesyesyesyesyesyesNO"
+        ];
         Random random = new Random();
         Console.WriteLine(responses[random.Next(responses.Length)]);
     }
@@ -125,20 +127,22 @@ public static class Commands
     
     public static void Fortune()
     {
-        string[] fortunes = { "you will find a penny on the ground today.", "beware of coding bugs tomorrow.", "an unexpected error will bring great wisdom.", "today is the day to ignore deadlines.", "you will forget your password when you need it most." };
+        string[] fortunes = ["you will find a penny on the ground today.", "beware of coding bugs tomorrow.", "an unexpected error will bring great wisdom.", "today is the day to ignore deadlines.", "you will forget your password when you need it most."
+        ];
         Random random = new Random();
         Console.WriteLine(fortunes[random.Next(fortunes.Length)]);
     }
     
     public static void TellAJoke()
     {
-        string[] jokes = {
+        string[] jokes =
+        [
             // TODO: add more jokes
             "why do programmers hate nature? it has too many bugs.",
             "how many programmers does it take to change a light bulb? none, that's a hardware problem!",
             "why do java developers wear glasses? because they don’t C#.",
             "i told my computer i needed a break, and now it won’t stop sending me ads for vacations."
-        };
+        ];
         Random random = new Random();
         Console.WriteLine(jokes[random.Next(jokes.Length)]);
     }
@@ -156,13 +160,14 @@ public static class Commands
     
     public static void UselessFact()
     {
-        string[] facts = {
+        string[] facts =
+        [
             "bananas are berries, but strawberries aren’t.",
             "wombat poop is cube-shaped.",
             "there is a species of jellyfish that is immortal.",
             "ketchup was sold as medicine in the 1830s.",
             "octopuses have three hearts."
-        };
+        ];
         Random random = new Random();
         Console.WriteLine(facts[random.Next(facts.Length)]);
     }
@@ -188,7 +193,7 @@ public static class Commands
         Console.WriteLine("tellajoke - tell a joke");
         Console.WriteLine("lag - process some REALLY important info");
         Console.WriteLine("facts - a random useless fact");
-        Console.WriteLine("");
-        
+        Console.WriteLine("unicode - prints a random unicode character");
+
     }
 }
